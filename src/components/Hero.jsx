@@ -117,7 +117,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video">
+      <div>
         <video
           ref={videoRef}
           src="/videos/output.mp4"

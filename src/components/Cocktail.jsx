@@ -11,7 +11,6 @@ const Cocktails = () => {
           start: "10% top",
           end: "80% top",
           scrub: true,
-          markers: true,
         },
       })
       .to("#c-left-leaf", {
