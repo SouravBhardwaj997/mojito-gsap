@@ -5,41 +5,41 @@ import { navLinks } from "../constants";
 
 const Navbar = () => {
   useGSAP(() => {
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: "nav",
-    //     start: "bottom top",
-    //     // markers:true
-    //   },
-    // });
-    // tl.fromTo(
-    //   "nav",
-    //   {
-    //     background: "transparent",
-    //   },
-    //   {
-    //     background: "#00000050",
-    //     backgroundFilter: "blur(10px)",
-    //   }
-    // );
-
-    gsap.to("nav", {
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "nav",
         start: "bottom top",
+        // markers:true
       },
-      background: "#00000050",
-      backgroundFilter: "blur(10px)",
-      ease: "expo.out",
     });
+    tl.fromTo(
+      "nav",
+      {
+        background: "transparent",
+      },
+      {
+        background: "#00000050",
+        backgroundFilter: "blur(10px)",
+      }
+    );
 
-    gsap.to("nav", {
-      scrollTrigger: {
-        trigger: "nav",
-        start: "top top",
-      },
-      background: "transparent",
-    });
+    // gsap.to("nav", {
+    //   scrollTrigger: {
+    //     trigger: "nav",
+    //     start: "bottom top",
+    //   },
+    //   background: "#00000050",
+    //   backgroundFilter: "blur(10px)",
+    //   ease: "expo.out",
+    // });
+
+    // gsap.to("nav", {
+    //   scrollTrigger: {
+    //     trigger: "nav",
+    //     start: "top top",
+    //   },
+    //   background: "transparent",
+    // });
   }, []);
   return (
     <nav>
