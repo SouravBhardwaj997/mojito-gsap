@@ -18,23 +18,24 @@ const About = () => {
       y: 80,
       opacity: 0,
       stagger: 0.02,
-    });
-
-    t1.from(".top-grid", {
-      y: 30,
-      opacity: 0,
-      stagger: 0.02,
+      // ease: "back.in",
     });
 
     t1.from(
-      ".bottom-grid",
+      ".top-grid",
       {
         y: 30,
         opacity: 0,
-        stagger: 0.02,
+        ease: "back.in",
       },
       "-=0.5"
     );
+
+    t1.from(".bottom-grid", {
+      y: 30,
+      opacity: 0,
+      ease: "back.in",
+    });
   });
   return (
     <section id="about">

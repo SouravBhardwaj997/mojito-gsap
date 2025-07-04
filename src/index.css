@@ -56,7 +56,7 @@ body {
   mask-image: url("/images/mask-img.png");
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 50%;
+  mask-size: 60%;
 }
 
 @layer components {
