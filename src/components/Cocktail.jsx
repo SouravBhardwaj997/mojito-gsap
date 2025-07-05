@@ -28,11 +28,13 @@ const Cocktails = () => {
         src="images/cocktail-left-leaf.png"
         alt="cocktails left leaf"
         id="c-left-leaf"
+        className="hidden"
       />
       <img
         src="images/cocktail-right-leaf.png"
         alt="cocktails right leaf"
         id="c-right-leaf"
+        className="hidden"
       />
       <div className="list">
         <div className="popular">

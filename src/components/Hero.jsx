@@ -6,8 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
   const videoRef = useRef();
-  const isMobile = useMediaQuery({ width: "676px" });
-
+  const isMobile = useMediaQuery({ maxWidth: "676px" });
   useGSAP(() => {
     const titleChars = new SplitText(".title", {
       type: "chars",
@@ -65,7 +64,7 @@ const Hero = () => {
     // };
 
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "120% top" : "bottom top";
+    const endValue = isMobile ? "126% top" : "100% top";
 
     const videoTimeline = gsap.timeline({
       scrollTrigger: {

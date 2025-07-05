@@ -1,14 +1,17 @@
 import { useGSAP } from "@gsap/react";
 import { featureLists, goodLists } from "../constants";
 import gsap from "gsap";
+import { useMediaQuery } from "react-responsive";
 const Art = () => {
+  const isMobile = useMediaQuery({ maxWidth: "676px" });
+  const start = isMobile ? "top 10%" : "10% top";
   useGSAP(() => {
     const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: "#art",
-        start: "10% top",
+        start,
         pin: true,
-        scrub: 2,
+        scrub: true,
       },
     });
     t1.to(".will-fade", {
@@ -19,8 +22,7 @@ const Art = () => {
     });
     t1.to(".masked-img", {
       maskSize: "400%",
-      ease: "expo.out",
-      duration: 5,
+      // ease: "expo.out",
     });
     t1.to(".will-appear", {
       opacity: 1,
@@ -47,11 +49,13 @@ const Art = () => {
           ))}
         </ul>
       </div>
-      <img src="/images/under-img.jpg" className="cocktail-img masked-img " />
       <div className="masked-container">
+        <img src="/images/under-img.jpg" className="cocktail-img masked-img " />
         <h2 className="will-fade">Sip-Worthy Perfection</h2>
-        <div className="will-appear mt-8">
-          <h3 className="text-nowrap">Made with Craft Poured with Passion</h3>
+        <div className="will-appear md:mt-8">
+          <h3 className="md:text-nowrap">
+            Made with Craft Poured with Passion
+          </h3>
           <p>
             This isn’t just a drink. It’s a carefully crafted moment made just
             for you.
