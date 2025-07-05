@@ -1,6 +1,14 @@
 import gsap from "gsap";
 import { SplitText, ScrollTrigger } from "gsap/all";
-import { About, Art, Cocktails, Hero, Menu, Navbar } from "./components/index";
+import {
+  About,
+  Art,
+  Cocktails,
+  Contact,
+  Hero,
+  Menu,
+  Navbar,
+} from "./components/index";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -13,7 +21,7 @@ function App() {
       <About />
       <Art />
       <Menu />
-      <div className="h-dvh w-full"></div>
+      <Contact />
     </main>
   );
 }
