@@ -1,12 +1,97 @@
-# React + Vite
+# 🍸 RestoBar - Enjoy Every Sip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A refreshing and animated **restaurant bar landing page** built with **React**, **GSAP**, and **Tailwind CSS** — delivering smooth scroll-triggered animations and vibrant visual storytelling.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Preview Screenshot](./public/images/preview.png)](https://restrobar-kappa.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+🎞️ **GSAP Animations**  
+🌀 Scroll-based motion with `ScrollTrigger` and text animations via `SplitText`.
+
+🎨 **Tailwind CSS Styling**  
+Fully responsive and utility-first design, optimized for all screen sizes.
+
+⚛️ **Modular React Components**  
+Reusable and readable structure using functional components.
+
+📼 **Background Video**  
+Immersive background video that blends with the theme.
+
+🧠 **Smooth User Experience**  
+Minimal transitions and thoughtful interactions.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology  | Description                            |
+| ----------- | -------------------------------------- |
+| ⚛️ React    | UI Library for building components     |
+| 🎞️ GSAP     | Animation library (with ScrollTrigger) |
+| 🌬️ Tailwind | Utility-first CSS framework            |
+| ⚡ Vite     | Fast build tool for modern web apps    |
+
+---
+
+## 📸 Screenshots
+
+### 🖼️ Hero Section
+
+![Hero](./public/images/hero.gif)
+
+### 🧾 About Scroll Animation
+
+![Menu](./public/images/about.gif)
+
+### 📬 Art Section
+
+![Contact](./public/images/art.gif)
+
+---
+
+## 📂 Folder Structure
+
+mojito-gsap/
+├── public/
+│ └── assets/ # Images and background videos
+├── src/
+│ ├── components/ # Header, Hero, Contact, etc.
+│ ├── constants/ # Static menu, social links
+│ ├── App.jsx
+│ └── main.jsx
+├── tailwind.config.js
+├── vite.config.js
+├── index.html
+└── README.md
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js ≥ 16.x
+- npm or yarn
+
+### 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/SouravBhardwaj997/mojito-gsap.git
+
+# Move into the folder
+cd mojito-gsap
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+<p style="text-align:center;">Made with 💚 and 🍹 by  <b>Sourav Bhardwaj<b>.<p>
