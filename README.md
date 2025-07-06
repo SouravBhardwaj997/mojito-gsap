@@ -56,18 +56,20 @@ Minimal transitions and thoughtful interactions.
 
 ## 📂 Folder Structure
 
+```text
 mojito-gsap/
 ├── public/
-│ └── assets/ # Images and background videos
+│   └── assets/            # Images and background videos
 ├── src/
-│ ├── components/ # Header, Hero, Contact, etc.
-│ ├── constants/ # Static menu, social links
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── components/        # Header, Hero, Contact, etc.
+│   ├── constants/         # Static menu, social links
+│   ├── App.jsx
+│   └── main.jsx
 ├── tailwind.config.js
 ├── vite.config.js
 ├── index.html
 └── README.md
+```
 
 ---
 
